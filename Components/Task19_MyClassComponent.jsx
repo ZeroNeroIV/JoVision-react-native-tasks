@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Text } from 'react-native';
 
 export class Task19_MyClassComponent extends Component {
@@ -19,7 +19,7 @@ export class Task19_MyClassComponent extends Component {
         return (
             <Text
                 style={this.state.style.textStyle}>
-                This is MyClassComponent
+                Task19's MyClassComponent
             </Text>
         );
     }

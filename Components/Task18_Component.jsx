@@ -1,4 +1,3 @@
-
 import { ActivityIndicator, Text, View } from 'react-native';
 
 export function Task18_Component() {
