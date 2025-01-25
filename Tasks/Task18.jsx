@@ -19,7 +19,7 @@ export function Task18() {
         alignItems: "center",
     }}>
         {(loader) ?
-            <Task18_Component></Task18_Component>
+            <Task18_Component />
             :
             <Text>Alameen Sabbah</Text>
         }
