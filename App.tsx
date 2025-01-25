@@ -13,11 +13,12 @@ import { Task22 } from './Tasks/Task22';
 import { Task23 } from './Tasks/Task23';
 import { Task24 } from './Tasks/Task24';
 import { Task25 } from './Tasks/Task25';
+import { Task26 } from './Tasks/Task26';
 
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <ScrollView>
         {/* <Task16></Task16> */}
         {/* <Task17></Task17> */}
@@ -28,13 +29,19 @@ export default function App() {
         {/* <Task22></Task22> */}
         {/* <Task23></Task23> */}
         {/* <Task24></Task24> */}
-        <Task25></Task25>
+        {/* <Task25></Task25> */}
+        <Task26></Task26>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    padding: 8,
+    margin: 10,
+    alignItems: "center",
+  },
   scrollView: {
     backgroundColor: 'grey',
   },
