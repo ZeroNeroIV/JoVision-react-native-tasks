@@ -2,10 +2,10 @@ import {
   SafeAreaView,
   StyleSheet,
   ScrollView,
-  View,
 } from 'react-native';
 import { Task16 } from './Tasks/Task16';
 import { Task17 } from './Tasks/Task17';
+import { Task18 } from './Tasks/Task18';
 
 
 export default function App() {
@@ -13,7 +13,8 @@ export default function App() {
     <SafeAreaView>
       <ScrollView>
         {/* <Task16></Task16> */}
-        <Task17></Task17>
+        {/* <Task17></Task17> */}
+        <Task18></Task18>
       </ScrollView>
     </SafeAreaView>
   );
