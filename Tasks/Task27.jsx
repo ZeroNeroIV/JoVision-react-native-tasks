@@ -24,11 +24,11 @@ export function Task27() {
             style={styles.small_image}
             alt="Capybara Staring!"
             source={
-                require('../Images/Capybara_staring_at_camera.png')
+                require('../Images/Task27/0.png')
             } />,
         <Image
             style={styles.mediam_image}
-            source={require('../Images/capyoranges.png')}
+            source={require('../Images/Task27/3.png')}
         />,
         <Image
             style={styles.large_image}
