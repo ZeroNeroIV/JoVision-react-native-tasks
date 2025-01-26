@@ -1,4 +1,4 @@
-import { Component, useImperativeHandle } from "react";
+import { Component } from "react";
 import { Text } from 'react-native';
 
 export class Task25_MyClassComponent extends Component {
