@@ -19,7 +19,6 @@ import { Task28_ItemComponent } from '../Components/Task28_ItemComponent';
 export function Task30() {
     const task28_img_base_path = "../Images/Task28/";
     const flat_list_ref = useRef();
-    const [deleteHovered, setDeleteHovered] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [text, setText] = useState('');
     const [err, setErr] = useState(null);
@@ -56,20 +55,14 @@ export function Task30() {
             <View>
                 <Pressable
                     style={[
-                        styles.box,
-                        { zIndex: 5 },
-                        deleteHovered && styles.overlay
+                        styles.icon,
+                        { zIndex: 5, backgroundColor: '', borderWidth: 0 },
                     ]}
-                    onPressIn={overlay_component_on}
-                    onPressOut={overlay_component_off}
-                    onHoverIn={overlay_component_on}
-                    onHoverOut={overlay_component_off}
                     onPress={apply_remove_from_arr}
                 >
                     <Icon
                         name="delete-outline"
                         size={35}
-                        style={styles.center}
                         color="red"
                         width="50"
                         height="50"
@@ -81,14 +74,6 @@ export function Task30() {
                 />
             </View>
         );
-    }
-
-    function overlay_component_on() {
-        setDeleteHovered(true);
-    }
-
-    function overlay_component_off() {
-        setDeleteHovered(false);
     }
 
     function on_change_text(text) {
@@ -210,16 +195,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    box: {
-        borderColor: 'black',
-        borderRadius: 32,
-        borderWidth: 1,
-        backgroundColor: 'grey',
+    icon: {
         position: 'absolute',
-        right: 32,
-        top: 32,
-        justifyContent: 'center',
-        alignItems: 'center',
+        right: 28,
+        top: 42,
     },
     button: {
         width: 200,
