@@ -16,7 +16,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Task29_PopUpPrompt } from '../Components/Task29_PopUpPrompt';
 import { Task28_ItemComponent } from '../Components/Task28_ItemComponent';
 
-export function Task30() {
+export function Task31() {
     const task28_img_base_path = "../Images/Task28/";
     const flat_list_ref = useRef();
     const [isVisible, setIsVisible] = useState(false);
@@ -51,12 +51,32 @@ export function Task30() {
         function apply_remove_from_arr() {
             remove_from_arr(index);
         }
+
+        function apply_add_duplicate_to_right() {
+            add_duplicate_to_right(index);
+        }
+
         return (
             <View>
                 <Pressable
                     style={[
                         styles.icon,
-                        { zIndex: 5 },
+                        { zIndex: 5, left: 42, right: '' },
+                    ]}
+                    onPress={apply_add_duplicate_to_right}
+                >
+                    <Icon
+                        name="plus"
+                        size={35}
+                        color="green"
+                        width="50"
+                        height="50"
+                    />
+                </Pressable>
+                <Pressable
+                    style={[
+                        styles.icon,
+                        { zIndex: 5, backgroundColor: '', borderWidth: 0 },
                     ]}
                     onPress={apply_remove_from_arr}
                 >
@@ -129,8 +149,15 @@ export function Task30() {
         function all_except(_, i) {
             return idx !== i;
         }
-
         setArr(arr.filter(all_except));
+    }
+
+    function add_duplicate_to_right(idx) {
+        let new_arr = []
+            .concat(arr.slice(0, idx))
+            .concat(arr[idx])
+            .concat(arr.slice(idx));
+        setArr(new_arr);
     }
 
     const popup_component =
