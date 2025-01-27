@@ -6,15 +6,13 @@ import {
     Button,
     FlatList,
     Modal,
-    TextInput,
     View,
-    Text,
     Platform,
     StyleSheet
 } from "react-native";
+import { Popup } from 'react-native-windows';
 import { Task28_ItemComponent } from '../Components/Task28_ItemComponent';
 import { Task29_PopUpPrompt } from '../Components/Task29_PopUpPrompt';
-import { Popup } from 'react-native-windows';
 
 export function Task29() {
     const task28_img_base_path = "../Images/Task28/";

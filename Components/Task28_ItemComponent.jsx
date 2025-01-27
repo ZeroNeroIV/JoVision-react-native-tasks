@@ -8,7 +8,7 @@ export function Task28_ItemComponent(props) {
             width: 400,
             height: 400,
             margin: 16,
-            borderRadius: 10,
+            borderRadius: 32,
             borderColor: '#a200e2',
             borderWidth: 5,
             overflow: "hidden",

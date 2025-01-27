@@ -1,5 +1,5 @@
 {
-  "name": "react_native_project",
+  "name": "jrnt",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,9 +12,14 @@
   },
   "dependencies": {
     "react": "18.3.1",
-    "react-native": "^0.76.0",
+    "react-dom": "18.0.0",
+    "react-native": "^0.77.0",
     "react-native-dialog": "^9.3.0",
-    "react-native-windows": "^0.76.0"
+    "react-native-vector-icons": "^10.2.0",
+    "react-native-web": "^0.19.13",
+    "react-native-windows": "^0.77.0",
+    "react-native-windows-init": "^1.4.60",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -42,8 +47,8 @@
   },
   "react-native-windows": {
     "init-windows": {
-      "name": "ReactNativeProject",
-      "namespace": "ReactNativeProject",
+      "name": "JRNT",
+      "namespace": "JRNT",
       "template": "old/uwp-cpp-app"
     }
   }

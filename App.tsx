@@ -17,6 +17,7 @@ import { Task26 } from './Tasks/Task26';
 import { Task27 } from './Tasks/Task27';
 import { Task28 } from './Tasks/Task28';
 import { Task29 } from './Tasks/Task29';
+import { Task30 } from './Tasks/Task30';
 
 
 export default function App() {
@@ -36,7 +37,8 @@ export default function App() {
         {/* <Task26></Task26> */}
         {/* <Task27></Task27> */}
         {/* <Task28></Task28> */}
-        <Task29></Task29>
+        {/* <Task29></Task29> */}
+        <Task30></Task30>
       </ScrollView>
     </SafeAreaView>
   );
@@ -72,5 +74,5 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
-  
+
 });
