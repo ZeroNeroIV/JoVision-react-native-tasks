@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Image, StyleSheet, Text, Alert, Pressable } from "react-native";
+import { Image, StyleSheet, Text, Alert, Pressable, AppState } from "react-native";
 
 export function Task28_ItemComponent(props) {
     const [hovered, setHovered] = useState(false);
@@ -33,15 +33,16 @@ export function Task28_ItemComponent(props) {
 
 
     function on_press() {
-        Alert.alert(
-            `You have selected image: ${props.idx}`,
-            null,
-            [
-                {
-                    text: "Ok",
-                    isPreferred: true,
-                },
-            ])
+        if (AppState.currentState == 'active')
+            Alert.alert(
+                `You have selected image: ${props.idx}`,
+                "",
+                [
+                    {
+                        text: "Ok",
+                        isPreferred: true,
+                    },
+                ]);
     }
 
     function on_hover_in() {
@@ -54,7 +55,6 @@ export function Task28_ItemComponent(props) {
 
     return (
         <Pressable
-            focusable={true}
             onPress={on_press}
             onHoverIn={on_hover_in}
             onHoverOut={on_hover_out}
