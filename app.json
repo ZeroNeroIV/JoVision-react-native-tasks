@@ -1,4 +1,14 @@
 {
-  "name": "react_native_project",
-  "displayName": "react_native_project"
+  "name": "jv_rn_tasks",
+  "displayName": "jv_rn_tasks",
+  "expo": {
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ]
+  }
 }
