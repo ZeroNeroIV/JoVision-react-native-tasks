@@ -24,6 +24,7 @@ import { Task33 } from './Tasks/Task33';
 import { Task34 } from './Tasks/Task34';
 import { Task35 } from './Tasks/Task35';
 import { Task36 } from './Tasks/Task36';
+import { Task37 } from './Tasks/Task37';
 
 
 export default function App() {
@@ -50,7 +51,8 @@ export default function App() {
         {/* <Task33 /> */}
         {/* <Task34 /> */}
         {/* <Task35 /> */}
-        <Task36 />
+        {/* <Task36 /> */}
+        <Task37 />
       </ScrollView>
     </SafeAreaView>
   );
