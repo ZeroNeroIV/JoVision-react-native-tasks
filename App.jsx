@@ -20,29 +20,31 @@ import { Task29 } from './Tasks/Task29';
 import { Task30 } from './Tasks/Task30';
 import { Task31 } from './Tasks/Task31';
 import { Task32 } from './Tasks/Task32';
+import { Task33 } from './Tasks/Task33';
 
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        {/* <Task16></Task16> */}
-        {/* <Task17></Task17> */}
-        {/* <Task18></Task18> */}
-        {/* <Task19></Task19> */}
-        {/* <Task20></Task20> */}
-        {/* <Task21></Task21> */}
-        {/* <Task22></Task22> */}
-        {/* <Task23></Task23> */}
-        {/* <Task24></Task24> */}
-        {/* <Task25></Task25> */}
-        {/* <Task26></Task26> */}
-        {/* <Task27></Task27> */}
-        {/* <Task28></Task28> */}
-        {/* <Task29></Task29> */}
-        {/* <Task30></Task30> */}
-        {/* <Task31></Task31> */}
-        <Task32></Task32>
+        {/* <Task16 /> */}
+        {/* <Task17 /> */}
+        {/* <Task18 /> */}
+        {/* <Task19 /> */}
+        {/* <Task20 /> */}
+        {/* <Task21 /> */}
+        {/* <Task22 /> */}
+        {/* <Task23 /> */}
+        {/* <Task24 /> */}
+        {/* <Task25 /> */}
+        {/* <Task26 /> */}
+        {/* <Task27 /> */}
+        {/* <Task28 /> */}
+        {/* <Task29 /> */}
+        {/* <Task30 /> */}
+        {/* <Task31 /> */}
+        {/* <Task32 /> */}
+        <Task33 />
       </ScrollView>
     </SafeAreaView>
   );
