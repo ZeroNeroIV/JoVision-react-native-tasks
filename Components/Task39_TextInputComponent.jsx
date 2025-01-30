@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { TextInput } from "react-native";
-import { setText, store } from "../Store/store";
+import { setText } from "../Store/store";
 import { useDispatch, useSelector } from "react-redux";
 
 
@@ -28,7 +28,6 @@ export function Task39_TextInputComponent() {
         on_mount();
         return on_unmount;
     }
-
 
     useEffect(handleEffect, [Task39_TextInputComponent]);
 
