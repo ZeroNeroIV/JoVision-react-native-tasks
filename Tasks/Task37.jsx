@@ -55,8 +55,7 @@ export function Task37() {
                 alignContent: "center",
                 justifyContent: "center",
                 alignSelf: "auto",
-                margin: 20,
-
+                margin: 10,
             }}
         >
             <ScrollView
@@ -64,7 +63,7 @@ export function Task37() {
                 style={{
                     alignSelf: 'center',
                     width: 250,
-                    height: 500,
+                    height: 700,
                     borderRadius: 16,
                 }}
             >

@@ -13,7 +13,11 @@ export function Task39() {
 
     return (
         <Provider store={store}>
-            <View>
+            <View
+                style={{
+                    alignItems: 'center'
+                }}
+            >
                 <Button
                     title={show ? "Hide" : "Show"}
                     onPress={on_press}

@@ -195,7 +195,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     icon: {
+        backgroundColor: 'midnightblue',
+        width: 50,
+        height: 50,
+        borderRadius: 30,
         position: 'absolute',
+        padding: 7,
         right: 28,
         top: 42,
     },

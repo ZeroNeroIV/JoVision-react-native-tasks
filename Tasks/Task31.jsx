@@ -69,14 +69,14 @@ export function Task31() {
                         name="plus"
                         size={35}
                         color="green"
-                        width="50"
-                        height="50"
+                        width='35'
+                        height='35'
                     />
                 </Pressable>
                 <Pressable
                     style={[
                         styles.icon,
-                        { zIndex: 5, backgroundColor: '', borderWidth: 0 },
+                        { zIndex: 5, borderWidth: 0 },
                     ]}
                     onPress={apply_remove_from_arr}
                 >
@@ -84,8 +84,8 @@ export function Task31() {
                         name="delete-outline"
                         size={35}
                         color="red"
-                        width="50"
-                        height="50"
+                        width='35'
+                        height='35'
                     />
                 </Pressable>
                 <Task28_ItemComponent
@@ -222,7 +222,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     icon: {
+        backgroundColor: 'midnightblue',
+        width: 50,
+        height: 50,
+        borderRadius: 30,
         position: 'absolute',
+        padding: 7,
         right: 28,
         top: 42,
     },

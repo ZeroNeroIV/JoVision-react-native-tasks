@@ -1,6 +1,5 @@
 import {
   SafeAreaView,
-  StyleSheet,
   ScrollView,
 } from 'react-native';
 import { Task16 } from './Tasks/Task16';
@@ -28,12 +27,29 @@ import { Task37 } from './Tasks/Task37';
 import { Task38 } from './Tasks/Task38';
 import { Task39 } from './Tasks/Task39';
 import { Task40 } from './Tasks/Task40';
-
+import { Task41 } from './Tasks/Task41';
+import { Task42 } from './Tasks/Task42';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
+    <SafeAreaView
+      style={{
+        padding: 2,
+        margin: 5,
+        backgroundColor: 'orange',
+        flex: 1
+      }}
+    >
+      <ScrollView
+        contentContainerStyle={{ flexGrow: 1 }}
+        style={{
+          padding: 2,
+          margin: 2,
+          height: 750,
+          backgroundColor: 'brown',
+          alignContent: 'center',
+        }}
+      >
         {/* <Task16 /> */}
         {/* <Task17 /> */}
         {/* <Task18 /> */}
@@ -58,41 +74,10 @@ export default function App() {
         {/* <Task37 /> */}
         {/* <Task38 /> */}
         {/* <Task39 /> */}
-        <Task40 />
+        {/* <Task40 /> */}
+        <Task41 />
+        {/* <Task42 /> */}
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 8,
-    margin: 10,
-    alignItems: "center",
-  },
-  scrollView: {
-    backgroundColor: 'grey',
-  },
-  centeredContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-
-});
