@@ -75,8 +75,8 @@ export default function App() {
         {/* <Task38 /> */}
         {/* <Task39 /> */}
         {/* <Task40 /> */}
-        <Task41 />
-        {/* <Task42 /> */}
+        {/* <Task41 /> */}
+        <Task42 />
       </ScrollView>
     </SafeAreaView>
   );
